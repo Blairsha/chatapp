@@ -1,0 +1,35 @@
+/* src/styles/chat.css */
+
+/* Стили для фона чата */
+.chat-background {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .chat-background-overlay {
+    background-color: rgba(var(--b1), var(--bg-opacity, 0.85));
+    backdrop-filter: blur(var(--bg-blur, 2px));
+  }
+  
+  /* Стили для сообщений на фоне */
+  .message-bubble {
+    background-color: rgba(var(--b3), 0.9);
+    backdrop-filter: blur(4px);
+  }
+  
+  .dark .message-bubble {
+    background-color: rgba(var(--b3), 0.8);
+  }
+  
+  /* Улучшения для превью в настройках */
+  .chat-preview-container {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .chat-preview-overlay {
+    background-color: rgba(var(--b1), var(--preview-opacity, 0.8));
+    backdrop-filter: blur(var(--preview-blur, 2px));
+  }
